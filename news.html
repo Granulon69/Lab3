@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новини</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        footer {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Новини</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="rozklad.html">Розклад</a></li>
+                    <li><a href="news.html">Новини</a></li>
+                    <li><a href="photo.html">Фото</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Останні новини</h2>
+
+            <article class="news-item">
+                <img src="https://www.apple.com/newsroom/images/2024/08/apple-and-4-h-are-bringing-technology-to-a-new-generation-of-learners/tile/Apple-CEI-4-H-hero-lp.jpg.landing-gradient-1by1-large.jpg" alt="Новина 1">
+                <h3>Дата публікації: 01.09.2024</h3>
+                <p>Apple анонсувала нову лінійку iPhone 15. Усі нові функції і подробиці.</p>
+                <a href="https://www.apple.com/newsroom" target="_blank">Читати повну версію</a>
+            </article>
+
+            <article class="news-item">
+                <img src="https://duet-cdn.vox-cdn.com/thumbor/0x0:2040x1360/256x171/filters:focal(1020x680:1021x681):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/25583109/12s_PlugBug_50_US_OnWall_HiRes_rec.jpg" alt="Новина 2">
+                <h3>Дата публікації: 02.09.2024</h3>
+                <p>Google представила новий штучний інтелект, який зможе допомогти в пошукових запитах.</p>
+                <a href="https://www.theverge.com/tech" target="_blank">Читати повну версію</a>
+            </article>
+
+            <article class="news-item">
+                <img src="https://static-redesign.cnbcfm.com/dist/7821ea3cb72f88388591.svg" alt="Новина 3">
+                <h3>Дата публікації: 03.09.2024</h3>
+                <p>Tesla готує до випуску новий електричний вантажівка з автопілотом. Перший тестовий запуск пройшов успішно.</p>
+                <a href="https://www.cnbc.com/tesla" target="_blank">Читати повну версію</a>
+            </article>
+
+            <article class="news-item">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAABACAYAAAADMXsPAAAACXBIWXMAAAsSAAALEgHS3X78AAAEzElEQVR4nO2d4W3bMBCF74r+rzeoN0g6QdwJ6k4Qd4Jmg3iEdII6E9SdIPYEtSdovEEywRUMzo0RWKQsUuLRfB9ApIAChXrVk8i7I8VEJFQxIsIxV8/M0C+C2vV7Z6APAFQLDAhARmBAADICAwKQERgQgIzAgABkBAYEICMwIAAZgQEByAgMCEBGYEAAMgIDApCR9xAfVM6WiJ7eSDAmoo9DyJLSgPdEtIg8x6W2yVACGAL69c8zES2JaOWaiDz6/iIzH+o5JaIPffRQErW5iFCqphe+SNi/oy22v9DPjH6+5gw3S9DXqZ4rWd/MzgFFZCMiMyL6REQ7A10qCuj3grvuryIyEZHY0YXTdOnORUQ/0nSvgCCMu5H0ab410J3iqFi/3+66nWl6OPfbOWNnioiCioi74JmBrhRJhfrdi8hUr9s0g0RBmXmskaUmNiGx3JOcmd2r/7tlQfsA+p3EvQ69i2CoNIQT5Nb3C8y81UCEb8iwqNGA0K8167bmY+aRRjcnOkR3XOnPtf7caFv2+TbtPYrnjp1wnmkgEvV0plE86BfX3HWNWvy9kep5qg7uwTbp8P/hbRbngHeB45uB+lEqteo3D72lNK+30dHEqTm9L0T0wMyrgzdmNBYrYZBAjqNG/XYi4n3wqPlWCZLpVy1+pzUl1oKODPShZM5RP2+OT+d7KcyXHIsGfG46oEJeDNud4qhRv1CSfW7RfGTUgD4xpwP2o1Rq02/rq+nUh47ZyK81A271adWE7xioU79QUMn0Q8dCEGZ3kGtpfHoz8wIBmqPUrl/IgJOB+tGZ3vNYkXmiUZ9V/SXkAaGft00C50+6eiF1M70gV0PHS7z5ugH9XkiaNkiN6TSEVvJPdbEqgH5nRxHLkbS+77MvxA6gX4kUk4gXkZVOqHETdQD62WSo5UizwHq0R20bXzW/Lqlx5/nVT09tAv2iWFueBw4VhBkHRPh/jJl3WtF/NLzsbjBmNi1qD0C/ZvY1nk08Wr5Wi0NQF7FbaQSviej9Pc6Y2vTzLVSmgDmzY3UO6Or2bjzH+9jn45yoSb9Qot30tVoOwjQKW8JeHwaoRb8Lrfc8il6r2TSMZQOGksfrwPHaqUm/UL3njdXor2UDhm6QZKuSz5Sa9PMNt/dvQZNF2ZYNGJo8m1zfZYia9HPDUO9cUPOgKYoRdjVszOvWeDUunWFmrAv0U6N+ob1w9iYcd5wTuo1+v4nIOGVgx1oxtlvPdtdiG3EY8Dg16+fegnPfg4deh6MzZr5RHSZqyv1uAc8HS5xW+u9VX4GroQy4aDEkCm4uS68V/tfpulYE0K8dt8zsrQbao1otcudEBzGgbhng/RRUGzTcXF0SHvqdxMLNB5sqgaxRTDH2wc5W2JSpAxXp54JLf7Tm1TxFGFAjXDBfRyrV7yczL/W7GqlJdk7TBnQ3ju5l8gDznQ70e9nN+q/TIIUR3VtVd8b+maZ7BqKgOjQ6TArvo1L4zHILoF8rXNDpWj9gs/9EdTBopSOHy4OPuCTPnbJuMlMtIsJRAjJDvwgM6HesYuhyqEIFGBAGjAL6xVHityEAOBtgQAAyAgMCkBEYEICMwIAAZAQGBCAjMCAAGYEBAcgIDAhARmBAADICAwKQERgQgFwQ0T+zWRe0kl6iUwAAAABJRU5ErkJggg==" alt="Новина 4">
+                <h3>Дата публікації: 04.09.2024</h3>
+                <p>Україна підписала угоду з ЄС щодо постачання енергетичних ресурсів на наступні 10 років.</p>
+                <a href="https://www.bbc.com/ukraine/news" target="_blank">Читати повну версію</a>
+            </article>
+
+            <article class="news-item">
+                <img src="https://img.olympics.com/images/image/private/t_16-9_760/f_auto/primary/uodmgmonyxh8dnkpql9w" alt="Новина 5">
+                <h3>Дата публікації: 05.09.2024</h3>
+                <p>Олімпійські ігри 2024 року обіцяють стати найбільшими в історії завдяки новим технологіям в організації.</p>
+                <a href="https://www.olympic.org/news" target="_blank">Читати повну версію</a>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Нестеренко Данило. Усі права захищені.</p>
+    </footer>
+</body>
+</html>
